@@ -16,7 +16,7 @@ final_data = {x.replace('.', ''): v for x, v in data.items()}
 db_collc.insert_one(final_data)           # insert data into database
 
 for record in db_collc.find({}):          # retrieving data from databse
-   		continue
+    continue
 
 def translate(w):
     w = w.lower()
@@ -32,7 +32,6 @@ def translate(w):
             return "We didn't understand your entry."
     else:
         return "The word doesn't exist. Please double check it."
-    
 
 word = input("Enter word: ")
 output = translate(word)
